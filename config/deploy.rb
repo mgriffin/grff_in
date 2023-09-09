@@ -7,7 +7,7 @@ set :repo_url, "git@github.com:mgriffin/grff_in.git"
 set :branch, :main
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
-append :linked_files, 'config/database.yml'
+append :linked_files, 'config/database.yml', "config/master.key"
 
 set :migration_role, :app
 
@@ -19,8 +19,6 @@ set :rbenv_roles, :production
 set :puma_enable_socket_service, true
 set :puma_service_unit_name, "puma_grff_in_production"
 set :puma_systemctl_user, :system
-
-append :linked_files, "config/master.key"
 
 namespace :deploy do
   namespace :check do
