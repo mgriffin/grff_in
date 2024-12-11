@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.18.0"
+lock "~> 3.19.2"
 
 set :application, "grff_in"
 set :repo_url, "git@github.com:mgriffin/grff_in.git"
