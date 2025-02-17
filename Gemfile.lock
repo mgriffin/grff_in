@@ -246,8 +246,8 @@ GEM
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       sprockets (>= 3.0.0)
-    sqlite3 (1.7.3-arm64-darwin)
-    sqlite3 (1.7.3-x86_64-linux)
+    sqlite3 (2.5.0-arm64-darwin)
+    sqlite3 (2.5.0-x86_64-linux-gnu)
     sshkit (1.24.0)
       base64
       logger
@@ -305,7 +305,7 @@ DEPENDENCIES
   redis (~> 4.0)
   selenium-webdriver
   sprockets-rails
-  sqlite3 (~> 1.4)
+  sqlite3 (~> 2.1)
   stimulus-rails
   turbo-rails
   tzinfo-data
